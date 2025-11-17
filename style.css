@@ -11,13 +11,15 @@ a {
 body {
   padding: 0;
   margin: 0;
-  background-color: #f1f1f1;
-  color: #151515;
+  background-color: #000;
+  color: #fff;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   font-size: 1rem;
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Open Sans", sans-serif;
 }
 
 button,
@@ -28,6 +30,7 @@ input {
 input {
   border: none;
   background: transparent;
+  padding-left: 8px;
 }
 
 h1,
@@ -37,34 +40,84 @@ p {
 }
 
 .wrapper {
-  padding: 1rem;
+  padding: 3rem 1rem;
   width: 100%;
-  max-width: 300px;
-padding: 12px;
-  border-radius: 6px;
-  border: 1px solid red;
+  max-width: 700px;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #313131;
+  border-radius: 10px;
+  padding: 0.75rem 12px;
+  margin-block: 1rem;
+  background: #141414;
+}
+
+.card-wrapper {
+  display: grid;
+  margin-block: 3rem;
+  gap: 1.5rem;
+}
+
+.single-card {
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #313131;
+  background-color: #141414;
 }
 
 .icon-wrapper {
   display: inline-flex;
   justify-content: center;
-  border: 1px solid black;
+  background-color: #242424;
+  border: 1px solid #353535;
   border-radius: 20px;
-  padding: 6px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .card-labels {
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
-  margin-block: 12px;
+  margin-top: 1.5rem;
 }
 
 .label {
   display: flex;
   justify-content: center;
-  border: 1px solid black;
   border-radius: 30px;
-  font-size: 12px;
+  font-size: 14px;
   padding: 2px 8px;
+  background-color: #242424;
+  color: #c7c5c5;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+@media (min-width: 768px) {
+  .card-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
 }
