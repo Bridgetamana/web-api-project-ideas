@@ -1,0 +1,66 @@
+[
+    {
+        "api-name": "background fetch",
+        "description": "A curated list of project ideas that leverage browser APIs, going beyond typical REST API integrations.",
+        "labels": [
+            "speech",
+            "beginner"
+        ],
+        "project-ideas": [
+            {
+                "id": 1,
+                "title": "Build this",
+                "resources": [
+                    {
+                        "resource1": "https://thisisaurl",
+                        "resource2": "https://thisisaurl",
+                        "resource3": "https://thisisaurl"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Build this",
+                "resources": [
+                    {
+                        "resource1": "https://thisisaurl",
+                        "resource2": "https://thisisaurl",
+                        "resource3": "https://thisisaurl"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "api-name": "background fetch",
+        "description": "A curated list of project ideas that leverage browser APIs, going beyond typical REST API integrations.",
+        "labels": [
+            "speech",
+            "beginner"
+        ],
+        "project-ideas": [
+            {
+                "id": 1,
+                "title": "Build this",
+                "resources": [
+                    {
+                        "resource1": "https://thisisaurl",
+                        "resource2": "https://thisisaurl",
+                        "resource3": "https://thisisaurl"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Build this",
+                "resources": [
+                    {
+                        "resource1": "https://thisisaurl",
+                        "resource2": "https://thisisaurl",
+                        "resource3": "https://thisisaurl"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -2,6 +2,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -9,14 +11,12 @@ a {
 }
 
 body {
-  padding: 0;
-  margin: 0;
   background-color: #000;
   color: #fff;
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: "Open Sans", sans-serif;
@@ -31,12 +31,6 @@ input {
   border: none;
   background: transparent;
   padding-left: 8px;
-}
-
-h1,
-h2,
-p {
-  margin: 0;
 }
 
 .wrapper {
@@ -120,4 +114,26 @@ footer div {
   .card-wrapper {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+/* Api detail page */
+.go-back-btn {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+header {
+  margin-block: 2rem;
+}
+
+.project-list li {
+  padding-block: 1rem;
+  list-style: none;
+  border-bottom: 1px solid #fff;
+}
+
+.project-list li a {
+  text-decoration: none;
 }
