@@ -2,6 +2,7 @@
     {
         "api-name": "background fetch",
         "description": "A curated list of project ideas that leverage browser APIs, going beyond typical REST API integrations.",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M12 15.5c2.21 0 4-1.79 4-4V6c0-2.21-1.79-4-4-4S8 3.79 8 6v5.5c0 2.21 1.79 4 4 4Z\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
         "labels": [
             "speech",
             "beginner"
