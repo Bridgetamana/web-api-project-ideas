@@ -25,12 +25,7 @@ body {
 button,
 input {
   font: inherit;
-}
-
-input {
-  border: none;
-  background: transparent;
-  padding-left: 8px;
+  color: inherit;
 }
 
 .wrapper {
@@ -58,6 +53,19 @@ input {
   background: #141414;
 }
 
+.search-bar:focus-within {
+  border-color: #fff;
+  outline: 1px solid #fff;
+}
+
+input {
+  border: none;
+  background: transparent;
+  padding-left: 8px;
+  width: 100%;
+  outline: none;
+}
+
 .card-wrapper {
   display: grid;
   margin-block: 3rem;
@@ -68,8 +76,14 @@ input {
   padding: 1rem;
   border-radius: 12px;
   border: 1px solid #313131;
+  color: #c7c5c5;
   background-color: #141414;
   text-decoration: none;
+}
+
+.single-card:hover {
+  border-color: #c7c5c5;
+  color: #fff;
 }
 
 .icon-wrapper {
@@ -91,7 +105,7 @@ input {
 .card-labels {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 8px;
   margin-top: 1.5rem;
 }
 
@@ -100,7 +114,7 @@ input {
   justify-content: center;
   border-radius: 30px;
   font-size: 14px;
-  padding: 2px 8px;
+  padding: 2px 12px;
   background-color: #242424;
   color: #c7c5c5;
 }

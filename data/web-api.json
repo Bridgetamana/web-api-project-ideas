@@ -1,66 +1,293 @@
 [
     {
-        "api-name": "background fetch",
-        "description": "A curated list of project ideas that leverage browser APIs, going beyond typical REST API integrations.",
-        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M12 15.5c2.21 0 4-1.79 4-4V6c0-2.21-1.79-4-4-4S8 3.79 8 6v5.5c0 2.21 1.79 4 4 4Z\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
-        "labels": [
-            "speech",
-            "beginner"
-        ],
-        "project-ideas": [
+        "id": "barcode-detection-api",
+        "name": "Barcode Detection API",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M12 15.5c2.21 0 4-1.79 4-4V6c0-2.21-1.79-4-4-4S8 3.79 8 6v5.5c0 2.21 1.79 4 4 4Z\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M4.35 9.65v1.7C4.35 15.57 7.78 19 12 19c4.22 0 7.65-3.43 7.65-7.65v-1.7M10.61 6.43c.9-.33 1.88-.33 2.78 0M11.2 8.55c.53-.14 1.08-.14 1.61 0M12 19v3\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
+        "tagline": "Detect and decode barcodes and QR codes in images.",
+        "category": "AI/Vision",
+        "difficulty": "Medium",
+        "description": "The Barcode Detection API detects barcodes and QR codes in images, allowing you to build scanners directly in the browser without heavy external libraries.",
+        "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Barcode_Detection_API",
+        "projects": [
             {
-                "id": 1,
-                "title": "Build this",
-                "resources": [
-                    {
-                        "resource1": "https://thisisaurl",
-                        "resource2": "https://thisisaurl",
-                        "resource3": "https://thisisaurl"
-                    }
-                ]
-            },
-            {
-                "id": 2,
-                "title": "Build this",
-                "resources": [
-                    {
-                        "resource1": "https://thisisaurl",
-                        "resource2": "https://thisisaurl",
-                        "resource3": "https://thisisaurl"
-                    }
-                ]
+                "id": "pantry-tracker",
+                "title": "Smart Pantry Inventory",
+                "description": "Scan grocery items using your camera to look up products and add them to a digital inventory.",
+                "difficulty": "Medium",
+                "time_estimate": "4 Hours",
+                "core_apis": [
+                    "Barcode Detection API",
+                    "MediaStream API"
+                ],
+                "other_apis": [
+                    "Vibration API"
+                ],
+                "launchpad": {
+                    "concepts": [
+                        "Instantiating `new BarcodeDetector()`",
+                        "Supported formats: 'qr_code', 'ean_13', 'upc_a'",
+                        "Passing a video stream element to `detect()`"
+                    ],
+                    "search_terms": [
+                        "javascript barcode detection api example",
+                        "open food facts api json",
+                        "check barcode detector support browser"
+                    ]
+                }
             }
         ]
     },
     {
-        "api-name": "background fetch",
-        "description": "A curated list of project ideas that leverage browser APIs, going beyond typical REST API integrations.",
-        "labels": [
-            "speech",
-            "beginner"
-        ],
-        "project-ideas": [
+        "id": "eye-dropper-api",
+        "name": "EyeDropper API",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M12 15.5c2.21 0 4-1.79 4-4V6c0-2.21-1.79-4-4-4S8 3.79 8 6v5.5c0 2.21 1.79 4 4 4Z\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M4.35 9.65v1.7C4.35 15.57 7.78 19 12 19c4.22 0 7.65-3.43 7.65-7.65v-1.7M10.61 6.43c.9-.33 1.88-.33 2.78 0M11.2 8.55c.53-.14 1.08-.14 1.61 0M12 19v3\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
+        "tagline": "Sample colors from anywhere on the user's screen.",
+        "category": "Design Tools",
+        "difficulty": "Easy",
+        "description": "The EyeDropper API provides a mechanism for creating an eyedropper tool that allows users to select colors from their screen, including outside the browser window.",
+        "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API",
+        "projects": [
             {
-                "id": 1,
-                "title": "Build this",
-                "resources": [
-                    {
-                        "resource1": "https://thisisaurl",
-                        "resource2": "https://thisisaurl",
-                        "resource3": "https://thisisaurl"
-                    }
-                ]
-            },
+                "id": "global-color-picker",
+                "title": "Universal Design Palette",
+                "description": "A tool for designers to grab colors from any website or app and save them to a palette.",
+                "difficulty": "Easy",
+                "time_estimate": "2 Hours",
+                "core_apis": [
+                    "EyeDropper API"
+                ],
+                "other_apis": [
+                    "Clipboard API",
+                    "LocalStorage"
+                ],
+                "launchpad": {
+                    "concepts": [
+                        "The `new EyeDropper()` constructor",
+                        "The `open()` method and handling the promise",
+                        "Copying hex codes to clipboard"
+                    ],
+                    "search_terms": [
+                        "javascript eyedropper api tutorial",
+                        "copy to clipboard javascript",
+                        "css grid color palette layout"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "id": "document-pip-api",
+        "name": "Document Picture-in-Picture API",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M12 15.5c2.21 0 4-1.79 4-4V6c0-2.21-1.79-4-4-4S8 3.79 8 6v5.5c0 2.21 1.79 4 4 4Z\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M4.35 9.65v1.7C4.35 15.57 7.78 19 12 19c4.22 0 7.65-3.43 7.65-7.65v-1.7M10.61 6.43c.9-.33 1.88-.33 2.78 0M11.2 8.55c.53-.14 1.08-.14 1.61 0M12 19v3\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
+        "tagline": "Open an always-on-top window that persists over other apps.",
+        "category": "Productivity",
+        "difficulty": "Medium",
+        "description": "Unlike the standard PiP which only works for video, the *Document* PiP API allows you to open any HTML content (timers, notes, custom players) in a floating window.",
+        "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Picture-in-Picture_API",
+        "projects": [
             {
-                "id": 2,
-                "title": "Build this",
-                "resources": [
-                    {
-                        "resource1": "https://thisisaurl",
-                        "resource2": "https://thisisaurl",
-                        "resource3": "https://thisisaurl"
-                    }
-                ]
+                "id": "floating-pomodoro",
+                "title": "Always-On-Top Focus Timer",
+                "description": "A Pomodoro timer that floats over your other windows so you never lose track of time.",
+                "difficulty": "Medium",
+                "time_estimate": "3 Hours",
+                "core_apis": [
+                    "Document Picture-in-Picture API"
+                ],
+                "other_apis": [
+                    "Notifications API"
+                ],
+                "launchpad": {
+                    "concepts": [
+                        "Using `documentPictureInPicture.requestWindow()`",
+                        "Copying styles from main window to PiP window",
+                        "Syncing state between windows"
+                    ],
+                    "search_terms": [
+                        "document picture in picture api example",
+                        "javascript countdown timer logic",
+                        "sync state across windows javascript"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "id": "web-midi-api",
+        "name": "Web MIDI API",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M12 15.5c2.21 0 4-1.79 4-4V6c0-2.21-1.79-4-4-4S8 3.79 8 6v5.5c0 2.21 1.79 4 4 4Z\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M4.35 9.65v1.7C4.35 15.57 7.78 19 12 19c4.22 0 7.65-3.43 7.65-7.65v-1.7M10.61 6.43c.9-.33 1.88-.33 2.78 0M11.2 8.55c.53-.14 1.08-.14 1.61 0M12 19v3\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
+        "tagline": "Connect musical instruments (MIDI) to the browser.",
+        "category": "Audio/Video",
+        "difficulty": "Hard",
+        "description": "The Web MIDI API allows web applications to list, open, and communicate with MIDI devices like keyboards and synthesizers plugged into the computer.",
+        "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_MIDI_API",
+        "projects": [
+            {
+                "id": "browser-synth",
+                "title": "Virtual Synthesizer",
+                "description": "Connect a physical MIDI keyboard to your computer and play sounds generated by the browser.",
+                "difficulty": "Hard",
+                "time_estimate": "1 Weekend",
+                "core_apis": [
+                    "Web MIDI API",
+                    "Web Audio API"
+                ],
+                "other_apis": [],
+                "launchpad": {
+                    "concepts": [
+                        "Requesting MIDI access via `navigator.requestMIDIAccess()`",
+                        "Listening for `midimessage` events",
+                        "Mapping MIDI notes (0-127) to Audio Frequency (Hz)"
+                    ],
+                    "search_terms": [
+                        "javascript web midi api tutorial",
+                        "convert midi note to frequency javascript",
+                        "web audio api oscillator example"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "id": "web-share-api",
+        "name": "Web Share API",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M12 15.5c2.21 0 4-1.79 4-4V6c0-2.21-1.79-4-4-4S8 3.79 8 6v5.5c0 2.21 1.79 4 4 4Z\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M4.35 9.65v1.7C4.35 15.57 7.78 19 12 19c4.22 0 7.65-3.43 7.65-7.65v-1.7M10.61 6.43c.9-.33 1.88-.33 2.78 0M11.2 8.55c.53-.14 1.08-.14 1.61 0M12 19v3\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
+        "tagline": "Share content using the device's native sharing dialog.",
+        "category": "Connectivity",
+        "difficulty": "Easy",
+        "description": "The Web Share API invokes the native sharing mechanism of the device, allowing users to share text, URLs, or files with other apps (like WhatsApp, Mail, or AirDrop).",
+        "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API",
+        "projects": [
+            {
+                "id": "quote-generator",
+                "title": "Viral Quote Card Generator",
+                "description": "Create a beautiful image from text and share it directly to Instagram or Twitter apps.",
+                "difficulty": "Medium",
+                "time_estimate": "3 Hours",
+                "core_apis": [
+                    "Web Share API",
+                    "Canvas API"
+                ],
+                "other_apis": [],
+                "launchpad": {
+                    "concepts": [
+                        "Checking `navigator.canShare()`",
+                        "Creating a file object from a Canvas blob",
+                        "Passing a `files` array to `navigator.share()`"
+                    ],
+                    "search_terms": [
+                        "web share api share image example",
+                        "canvas to blob javascript",
+                        "html5 canvas text wrapping"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "id": "gamepad-api",
+        "name": "Gamepad API",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M12 15.5c2.21 0 4-1.79 4-4V6c0-2.21-1.79-4-4-4S8 3.79 8 6v5.5c0 2.21 1.79 4 4 4Z\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M4.35 9.65v1.7C4.35 15.57 7.78 19 12 19c4.22 0 7.65-3.43 7.65-7.65v-1.7M10.61 6.43c.9-.33 1.88-.33 2.78 0M11.2 8.55c.53-.14 1.08-.14 1.61 0M12 19v3\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
+        "tagline": "Connect and use game controllers in the browser.",
+        "category": "Input/Hardware",
+        "difficulty": "Medium",
+        "description": "The Gamepad API gives you access to game controllers (Xbox, PlayStation, etc.) connected via USB or Bluetooth.",
+        "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API",
+        "projects": [
+            {
+                "id": "controller-ui-nav",
+                "title": "Gamepad Website Navigator",
+                "description": "An accessibility tool that lets you navigate a website using only an Xbox/PS controller.",
+                "difficulty": "Medium",
+                "time_estimate": "4 Hours",
+                "core_apis": [
+                    "Gamepad API"
+                ],
+                "other_apis": [
+                    "Intersection Observer API"
+                ],
+                "launchpad": {
+                    "concepts": [
+                        "The `gamepadconnected` event",
+                        "Polling input loops with `requestAnimationFrame`",
+                        "Mapping button presses to `element.focus()`"
+                    ],
+                    "search_terms": [
+                        "javascript gamepad api tutorial",
+                        "html5 game loop requestanimationframe",
+                        "accessibility keyboard navigation javascript"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "id": "view-transitions-api",
+        "name": "View Transitions API",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M12 15.5c2.21 0 4-1.79 4-4V6c0-2.21-1.79-4-4-4S8 3.79 8 6v5.5c0 2.21 1.79 4 4 4Z\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M4.35 9.65v1.7C4.35 15.57 7.78 19 12 19c4.22 0 7.65-3.43 7.65-7.65v-1.7M10.61 6.43c.9-.33 1.88-.33 2.78 0M11.2 8.55c.53-.14 1.08-.14 1.61 0M12 19v3\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
+        "tagline": "Create seamless animations between page states.",
+        "category": "Graphics/UI",
+        "difficulty": "Medium",
+        "description": "This API provides a mechanism to easily create animated transitions between different DOM states, even across page loads in single-page apps.",
+        "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API",
+        "projects": [
+            {
+                "id": "morphing-gallery",
+                "title": "Seamless Photo Gallery",
+                "description": "A photo gallery where clicking a thumbnail smoothly 'morphs' it into the full-screen version.",
+                "difficulty": "Medium",
+                "time_estimate": "3 Hours",
+                "core_apis": [
+                    "View Transitions API"
+                ],
+                "other_apis": [],
+                "launchpad": {
+                    "concepts": [
+                        "Using `document.startViewTransition()`",
+                        "CSS pseudo-elements `::view-transition-old`",
+                        "Assigning unique `view-transition-name` to elements"
+                    ],
+                    "search_terms": [
+                        "view transitions api tutorial",
+                        "css view transition name example",
+                        "morph animation javascript"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "id": "broadcast-channel-api",
+        "name": "Broadcast Channel API",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M12 15.5c2.21 0 4-1.79 4-4V6c0-2.21-1.79-4-4-4S8 3.79 8 6v5.5c0 2.21 1.79 4 4 4Z\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M4.35 9.65v1.7C4.35 15.57 7.78 19 12 19c4.22 0 7.65-3.43 7.65-7.65v-1.7M10.61 6.43c.9-.33 1.88-.33 2.78 0M11.2 8.55c.53-.14 1.08-.14 1.61 0M12 19v3\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
+        "tagline": "Communication between tabs or windows of the same site.",
+        "category": "Connectivity",
+        "difficulty": "Easy",
+        "description": "The Broadcast Channel API allows basic communication between browsing contexts (windows, tabs, frames, or iframes) and workers on the same origin.",
+        "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API",
+        "projects": [
+            {
+                "id": "multi-window-controller",
+                "title": "Dual-Window Presentation Tool",
+                "description": "Open a 'Remote' in one window and the 'Presentation' in another. Clicking the remote updates the presentation instantly.",
+                "difficulty": "Easy",
+                "time_estimate": "2 Hours",
+                "core_apis": [
+                    "Broadcast Channel API"
+                ],
+                "other_apis": [],
+                "launchpad": {
+                    "concepts": [
+                        "Creating `new BroadcastChannel('channel-name')`",
+                        "Using `channel.postMessage()`",
+                        "Listening with `channel.onmessage`"
+                    ],
+                    "search_terms": [
+                        "communicate between browser tabs javascript",
+                        "broadcast channel api example",
+                        "sync state across tabs react vanilla"
+                    ]
+                }
             }
         ]
     }
