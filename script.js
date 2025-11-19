@@ -1,6 +1,8 @@
 const cardWrapper = document.getElementById("card-wrapper")
-
+const searchEl = document.getElementById("search")
 const url = "/data/web-api.json"
+
+let allData = [];
 
 fetch(url)
     .then((response) => {
@@ -10,13 +12,18 @@ fetch(url)
         return response.json()
     })
     .then(data => {
-        cardWrapper.innerHTML = '';
-        data.forEach(api => {
-            const card = createCard(api);
-            cardWrapper.appendChild(card);
-        });
+        allData = data;
+        displayCards(data);
     })
     .catch(error => console.error('Error:', error))
+
+function displayCards(data) {
+    cardWrapper.innerHTML = '';
+    data.forEach(api => {
+        const card = createCard(api);
+        cardWrapper.appendChild(card);
+    });
+}
 
 function createCard(api) {
     const card = document.createElement('a');
@@ -39,4 +46,18 @@ function createCard(api) {
     `;
 
     return card;
+}
+
+searchEl.addEventListener("input", () => {
+    searchApi(allData)
+})
+
+function searchApi(data) {
+    const result = data.filter((api) => {
+        const lowerCaseName = api.name.toLowerCase();
+        const lowerCaseQuery = searchEl.value.toLowerCase();
+        return lowerCaseName.includes(lowerCaseQuery);
+    })
+
+    displayCards(result);
 }
