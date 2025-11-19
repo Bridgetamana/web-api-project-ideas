@@ -33,7 +33,7 @@ function createCard(api) {
         </div>
         <div class="card-labels">
             <span class="label">
-                ${api.category}
+                ${api.projects.length} project idea(s)
             </span>
         </div>
     `;
