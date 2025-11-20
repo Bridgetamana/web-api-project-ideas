@@ -1,6 +1,6 @@
 const cardWrapper = document.getElementById("card-wrapper")
 const searchEl = document.getElementById("search")
-const url = "/data/web-api.json"
+const url = "./data/web-api.json"
 
 let allData = [];
 
@@ -28,8 +28,7 @@ function displayCards(data) {
 function createCard(api) {
     const card = document.createElement('a');
     card.className = 'single-card';
-    card.href = `#${api.id || api.name.toLowerCase().replace(/\s+/g, '-')}`;
-
+    card.href = `pages/api-detail.html?id=${api.id}`;
     card.innerHTML = `
         <div class="icon-wrapper">
              ${api.icon}

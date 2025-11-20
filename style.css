@@ -218,13 +218,13 @@ footer a:hover {
 }
 
 .project-list {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .project-list li {
   padding: 1.5rem 0;
   list-style: none;
-  border-bottom: 1px solid var(--border-subtle);
+  border-top: 1px solid var(--border-subtle);
 }
 
 .project-list li:last-child {
@@ -232,7 +232,7 @@ footer a:hover {
 }
 
 .project-list h3 {
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
   color: var(--text-main);
 }
