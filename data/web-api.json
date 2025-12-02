@@ -4,19 +4,21 @@
         "name": "Broadcast Channel API",
         "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M6.44 2h11.11C21.11 2 22 2.89 22 6.44v6.33c0 3.56-.89 4.44-4.44 4.44H6.44C2.89 17.22 2 16.33 2 12.78V6.44C2 2.89 2.89 2 6.44 2ZM12 17.22V22M2 13h20M7.5 22h9\" stroke=\"#FFD23F\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
         "description": "The Broadcast Channel API allows basic communication between browsing contexts (windows, tabs, frames, or iframes) and workers on the same origin.",
-        "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API",
+        "resources": [
+            {
+                "title": "MDN Documentation",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API"
+            },
+            {
+                "title": "web.dev Guide",
+                "url": "https://web.dev/articles/broadcast-channel"
+            }
+        ],
         "projects": [
             {
                 "id": "multi-window-controller",
                 "title": "Dual-Window Presentation Tool",
-                "description": "Open a 'Remote' in one window and the 'Presentation' in another. Clicking the remote updates the presentation instantly.",
-                "launchpad": {
-                    "search_terms": [
-                        "communicate between browser tabs javascript",
-                        "broadcast channel api example",
-                        "sync state across tabs react vanilla"
-                    ]
-                }
+                "description": "Open a 'Remote' in one window and the 'Presentation' in another. Clicking the remote updates the presentation instantly."
             }
         ]
     },
@@ -25,31 +27,30 @@
         "name": "Canvas API",
         "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path stroke=\"#ffd23f\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M3.5 20.5c.83.83 2.17.83 3 0l13-13c.83-.83.83-2.17 0-3-.83-.83-2.17-.83-3 0l-13 13c-.83.83-.83 2.17 0 3zM18.01 8.99l-3-3\"></path><path stroke=\"#ffd23f\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M8.5 2.44L10 2l-.44 1.5L10 5l-1.5-.44L7 5l.44-1.5L7 2l1.5.44zM4.5 8.44L6 8l-.44 1.5L6 11l-1.5-.44L3 11l.44-1.5L3 8l1.5.44zM19.5 13.44L21 13l-.44 1.5L21 16l-1.5-.44L18 16l.44-1.5L18 13l1.5.44z\"></path></svg>",
         "description": "The Canvas API provides a means for drawing graphics via JavaScript and the HTML &lt;canvas&gt; element. It can be used for animation, game graphics, data visualization, photo manipulation, and real-time video processing.",
-        "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API",
+        "resources": [
+            {
+                "title": "MDN Documentation",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API"
+            },
+            {
+                "title": "MDN Canvas Tutorial",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial"
+            },
+            {
+                "title": "HTML5 Canvas Deep Dive",
+                "url": "https://joshondesign.com/p/books/canvasdeepdive/title.html"
+            }
+        ],
         "projects": [
             {
                 "id": "image-compressor",
                 "title": "Browser-Based Image Compressor",
-                "description": "Upload a heavy image and compress it locally in the browser before downloading.",
-                "launchpad": {
-                    "search_terms": [
-                        "javascript canvas image compression",
-                        "canvas toblob quality parameter",
-                        "file reader read as data url"
-                    ]
-                }
+                "description": "Upload a heavy image and compress it locally in the browser before downloading."
             },
             {
                 "id": "collaborative-drawing",
                 "title": "Real-time Drawing Board",
-                "description": "A whiteboard where you can draw and others can see it updating live.",
-                "launchpad": {
-                    "search_terms": [
-                        "html5 canvas drawing app tutorial",
-                        "sync canvas over websockets",
-                        "handling high dpi retina canvas"
-                    ]
-                }
+                "description": "A whiteboard where you can draw and others can see it updating live."
             }
         ]
     },
@@ -58,19 +59,21 @@
         "name": "Document Picture-in-Picture API",
         "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M22 10v5c0 5-2 7-7 7H9c-5 0-7-2-7-7V9c0-5 2-7 7-7h5\" stroke=\"#FFD23F\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M22 10h-4c-3 0-4-1-4-4V2l8 8Z\" stroke=\"#FFD23F\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
         "description": "Unlike the standard PiP which only works for video, the *Document* PiP API allows you to open any HTML content (timers, notes, custom players) in a floating window.",
-        "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Picture-in-Picture_API",
+        "resources": [
+            {
+                "title": "MDN Documentation",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Picture-in-Picture_API"
+            },
+            {
+                "title": "Chrome Developers Guide",
+                "url": "https://developer.chrome.com/docs/web-platform/document-picture-in-picture"
+            }
+        ],
         "projects": [
             {
                 "id": "floating-pomodoro",
                 "title": "Always-On-Top Focus Timer",
-                "description": "A Pomodoro timer that floats over your other windows so you never lose track of time.",
-                "launchpad": {
-                    "search_terms": [
-                        "document picture in picture api example",
-                        "javascript countdown timer logic",
-                        "sync state across windows javascript"
-                    ]
-                }
+                "description": "A Pomodoro timer that floats over your other windows so you never lose track of time."
             }
         ]
     },
@@ -79,19 +82,21 @@
         "name": "EyeDropper API",
         "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path stroke=\"#FFD23F\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M10 4.5V18c0 1.08-.44 2.07-1.14 2.79l-.04.04c-.09.09-.19.18-.28.25-.3.26-.64.46-.99.6-.11.05-.22.09-.33.13-.39.13-.81.19-1.22.19-.27 0-.54-.03-.8-.08-.13-.03-.26-.06-.39-.1-.16-.05-.31-.1-.46-.17 0-.01 0-.01-.01 0-.28-.14-.55-.3-.8-.49l-.01-.01c-.13-.1-.25-.2-.36-.32-.11-.12-.22-.24-.33-.37-.19-.25-.35-.52-.49-.8.01-.01.01-.01 0-.01 0 0 0-.01-.01-.02-.06-.14-.11-.29-.16-.44a5.58 5.58 0 01-.1-.39c-.05-.26-.08-.53-.08-.8V4.5C2 3 3 2 4.5 2h3C9 2 10 3 10 4.5z\"></path><path stroke=\"#FFD23F\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M22 16.5v3c0 1.5-1 2.5-2.5 2.5H6c.41 0 .83-.06 1.22-.19.11-.04.22-.08.33-.13.35-.14.69-.34.99-.6.09-.07.19-.16.28-.25l.04-.04 6.8-6.79h3.84c1.5 0 2.5 1 2.5 2.5zM4.81 21.82c-.6-.18-1.17-.51-1.64-.99-.48-.47-.81-1.04-.99-1.64a4.02 4.02 0 002.63 2.63z\"></path><path stroke=\"#FFD23F\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M18.37 11.29L15.66 14l-6.8 6.79C9.56 20.07 10 19.08 10 18V8.34l2.71-2.71c1.06-1.06 2.48-1.06 3.54 0l2.12 2.12c1.06 1.06 1.06 2.48 0 3.54zM6 19a1 1 0 100-2 1 1 0 000 2z\"></path></svg>",
         "description": "The EyeDropper API provides a mechanism for creating an eyedropper tool that allows users to select colors from their screen, including outside the browser window.",
-        "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API",
+        "resources": [
+            {
+                "title": "MDN Documentation",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API"
+            },
+            {
+                "title": "web.dev Article",
+                "url": "https://web.dev/articles/eyedropper"
+            }
+        ],
         "projects": [
             {
                 "id": "global-color-picker",
                 "title": "Universal Design Palette",
-                "description": "A tool for designers to grab colors from any website or app and save them to a palette.",
-                "launchpad": {
-                    "search_terms": [
-                        "javascript eyedropper api tutorial",
-                        "copy to clipboard javascript",
-                        "css grid color palette layout"
-                    ]
-                }
+                "description": "A tool for designers to grab colors from any website or app and save them to a palette."
             }
         ]
     },
@@ -100,19 +105,25 @@
         "name": "File System Access API",
         "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M21 7v10c0 3-1.5 5-5 5H8c-3.5 0-5-2-5-5V7c0-3 1.5-5 5-5h8c3.5 0 5 2 5 5Z\" stroke=\"#ffd23f\" stroke-width=\"1.5\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M14.5 4.5v2c0 1.1.9 2 2 2h2M8 13h4M8 17h8\" stroke=\"#ffd23f\" stroke-width=\"1.5\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
         "description": "This API allows interaction with files on the user's local device. It enables developers to build powerful apps that interact with other (non-Web) apps on the user's device.",
-        "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API",
+        "resources": [
+            {
+                "title": "MDN Documentation",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API"
+            },
+            {
+                "title": "web.dev Guide",
+                "url": "https://web.dev/articles/file-system-access"
+            },
+            {
+                "title": "Chrome Developers",
+                "url": "https://developer.chrome.com/articles/file-system-access"
+            }
+        ],
         "projects": [
             {
                 "id": "text-editor",
                 "title": "Browser-Based Code Editor",
-                "description": "Open a file from your desktop, edit it in the browser, and save it back to disk.",
-                "launchpad": {
-                    "search_terms": [
-                        "window.showOpenFilePicker example",
-                        "file system access api tutorial",
-                        "javascript save file to disk"
-                    ]
-                }
+                "description": "Open a file from your desktop, edit it in the browser, and save it back to disk."
             }
         ]
     },
@@ -121,19 +132,21 @@
         "name": "Geolocation API",
         "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M12 13.43a3.12 3.12 0 1 0 0-6.24 3.12 3.12 0 0 0 0 6.24Z\" stroke=\"#ffd23f\" stroke-width=\"1.5\"></path><path d=\"M3.62 8.49c1.97-8.66 14.8-8.65 16.76.01 1.15 5.08-2.01 9.38-4.78 12.04a5.193 5.193 0 0 1-7.21 0c-2.76-2.66-5.92-6.97-4.77-12.05Z\" stroke=\"#ffd23f\" stroke-width=\"1.5\"></path></svg>",
         "description": "The Geolocation API allows the user to provide their location to web applications if they so desire. For privacy reasons, the user is asked for permission to report location information.",
-        "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API",
+        "resources": [
+            {
+                "title": "MDN Documentation",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API"
+            },
+            {
+                "title": "MDN Using Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API"
+            }
+        ],
         "projects": [
             {
                 "id": "pwa-fitness-tracker",
                 "title": "PWA Fitness Run Tracker",
-                "description": "Track your running route, calculate distance, and speed without native apps.",
-                "launchpad": {
-                    "search_terms": [
-                        "javascript geolocation watchposition example",
-                        "haversine formula javascript",
-                        "leaflet js draw route"
-                    ]
-                }
+                "description": "Track your running route, calculate distance, and speed without native apps."
             }
         ]
     },
@@ -142,19 +155,21 @@
         "name": "MediaStream API",
         "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M6.76 22h10.48c2.76 0 3.86-1.69 3.99-3.75l.52-8.26A3.753 3.753 0 0 0 18 6c-.61 0-1.17-.35-1.45-.89l-.72-1.45C15.37 2.75 14.17 2 13.15 2h-2.29c-1.03 0-2.23.75-2.69 1.66l-.72 1.45C7.17 5.65 6.61 6 6 6 3.83 6 2.11 7.83 2.25 9.99l.52 8.26C2.89 20.31 4 22 6.76 22ZM10.5 8h3\" stroke=\"#ffd23f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M12 18c1.79 0 3.25-1.46 3.25-3.25S13.79 11.5 12 11.5s-3.25 1.46-3.25 3.25S10.21 18 12 18Z\" stroke=\"#ffd23f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
         "description": "The Media Capture and Streams API relates to the manipulation of media streams, including requesting access to the microphone and camera.",
-        "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Media_Capture_and_Streams_API",
+        "resources": [
+            {
+                "title": "MDN Documentation",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Media_Capture_and_Streams_API"
+            },
+            {
+                "title": "web.dev Media Capture",
+                "url": "https://web.dev/articles/getusermedia-intro"
+            }
+        ],
         "projects": [
             {
                 "id": "card-scanner",
                 "title": "Business Card Scanner",
-                "description": "Take a photo of a business card and extract text/save it.",
-                "launchpad": {
-                    "search_terms": [
-                        "getusermedia camera tutorial",
-                        "javascript image capture api example",
-                        "ocr javascript library for business cards"
-                    ]
-                }
+                "description": "Take a photo of a business card and extract text/save it."
             }
         ]
     },
@@ -163,19 +178,21 @@
         "name": "Web Crypto API",
         "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M22 8.5a6.5 6.5 0 0 1-7.02 6.48 6.509 6.509 0 0 0-5.96-5.96A6.5 6.5 0 1 1 22 8.5Z\" stroke=\"#ffd23f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M15 15.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z\" stroke=\"#ffd23f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M7.62 14.62 8.5 13l.88 1.62 1.62.88-1.62.88L8.5 18l-.88-1.62L6 15.5l1.62-.88Z\" stroke=\"#ffd23f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
         "description": "The Web Crypto API provides a set of low-level cryptographic primitives to perform operations like hashing, signature generation, encryption, and decryption.",
-        "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API",
+        "resources": [
+            {
+                "title": "MDN Documentation",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API"
+            },
+            {
+                "title": "MDN SubtleCrypto",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto"
+            }
+        ],
         "projects": [
             {
                 "id": "password-manager",
                 "title": "Secure Password Manager Extension",
-                "description": "Generate and store passwords securely using native browser encryption.",
-                "launchpad": {
-                    "search_terms": [
-                        "web crypto api encrypt string example",
-                        "pbkdf2 derive key javascript",
-                        "secure password generator javascript"
-                    ]
-                }
+                "description": "Generate and store passwords securely using native browser encryption."
             }
         ]
     },
@@ -184,19 +201,21 @@
         "name": "Web MIDI API",
         "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M19.26 18.9V7.1c0-1.5-.64-2.1-2.23-2.1h-1.04c-1.59 0-2.23.6-2.23 2.1v11.8M5.26 18.9v-6.8c0-1.5.64-2.1 2.23-2.1h1.04c1.59 0 2.23.6 2.23 2.1v6.8M2 19h20\" stroke=\"#FFD23F\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
         "description": "The Web MIDI API allows web applications to list, open, and communicate with MIDI devices like keyboards and synthesizers plugged into the computer.",
-        "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_MIDI_API",
+        "resources": [
+            {
+                "title": "MDN Documentation",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_MIDI_API"
+            },
+            {
+                "title": "web.dev MIDI Guide",
+                "url": "https://web.dev/articles/midi"
+            }
+        ],
         "projects": [
             {
                 "id": "browser-synth",
                 "title": "Virtual Synthesizer",
-                "description": "Connect a physical MIDI keyboard to your computer and play sounds generated by the browser.",
-                "launchpad": {
-                    "search_terms": [
-                        "javascript web midi api tutorial",
-                        "convert midi note to frequency javascript",
-                        "web audio api oscillator example"
-                    ]
-                }
+                "description": "Connect a physical MIDI keyboard to your computer and play sounds generated by the browser."
             }
         ]
     },
@@ -205,19 +224,21 @@
         "name": "Web Share API",
         "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M14.99 17.5h1.51c3.02 0 5.5-2.47 5.5-5.5 0-3.02-2.47-5.5-5.5-5.5h-1.51M9 6.5H7.5A5.51 5.51 0 0 0 2 12c0 3.02 2.47 5.5 5.5 5.5H9M8 12h8\" stroke=\"#FFD23F\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
         "description": "The Web Share API invokes the native sharing mechanism of the device, allowing users to share text, URLs, or files with other apps (like WhatsApp, Mail, or AirDrop).",
-        "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API",
+        "resources": [
+            {
+                "title": "MDN Documentation",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API"
+            },
+            {
+                "title": "web.dev Share Guide",
+                "url": "https://web.dev/articles/web-share"
+            }
+        ],
         "projects": [
             {
                 "id": "quote-generator",
                 "title": "Viral Quote Card Generator",
-                "description": "Create a beautiful image from text and share it directly to Instagram or Twitter apps.",
-                "launchpad": {
-                    "search_terms": [
-                        "web share api share image example",
-                        "canvas to blob javascript",
-                        "html5 canvas text wrapping"
-                    ]
-                }
+                "description": "Create a beautiful image from text and share it directly to Instagram or Twitter apps."
             }
         ]
     },
@@ -226,31 +247,26 @@
         "name": "Web Speech API",
         "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M12 19c3.31 0 6-2.69 6-6V8c0-3.31-2.69-6-6-6S6 4.69 6 8v5c0 3.31 2.69 6 6 6Z\" stroke=\"#ffd23f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M3 11v2a9 9 0 0 0 18 0v-2M9.11 7.48a8 8 0 0 1 5.5 0M10.03 10.48c1.2-.33 2.47-.33 3.67 0\" stroke=\"#ffd23f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
         "description": "The Web Speech API enables you to incorporate voice data into web apps. The Web Speech API has two parts: SpeechSynthesis, and SpeechRecognition.",
-        "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API",
+        "resources": [
+            {
+                "title": "MDN Documentation",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API"
+            },
+            {
+                "title": "MDN Using Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API"
+            }
+        ],
         "projects": [
             {
                 "id": "voice-task-manager",
                 "title": "Voice-Controlled Task Manager",
-                "description": "A to-do list where you can add and remove items just by speaking.",
-                "launchpad": {
-                    "search_terms": [
-                        "javascript speech recognition api tutorial",
-                        "how to build voice controlled todo list js",
-                        "speechsynthesisutterance example"
-                    ]
-                }
+                "description": "A to-do list where you can add and remove items just by speaking."
             },
             {
                 "id": "pronunciation-helper",
                 "title": "Language Pronunciation Helper",
-                "description": "An app that speaks a word in a target language and listens to you repeat it to check accuracy.",
-                "launchpad": {
-                    "search_terms": [
-                        "javascript speech recognition language support",
-                        "compare two strings for similarity javascript",
-                        "web speech api accents"
-                    ]
-                }
+                "description": "An app that speaks a word in a target language and listens to you repeat it to check accuracy."
             }
         ]
     },
@@ -259,19 +275,21 @@
         "name": "View Transitions API",
         "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path stroke=\"#FFD23F\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M21.81 3.94c-1.54 3.84-5.4 9.06-8.63 11.65l-1.97 1.58c-.25.18-.5.34-.78.45 0-.18-.01-.38-.04-.57-.11-.84-.49-1.62-1.16-2.29-.68-.68-1.51-1.08-2.36-1.19-.2-.01-.4-.03-.6-.01.11-.31.28-.6.49-.84l1.56-1.97c2.58-3.23 7.82-7.11 11.65-8.64.59-.22 1.16-.06 1.52.31.38.37.56.94.32 1.52z\"></path><path stroke=\"#FFD23F\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M10.43 17.62c0 1.1-.42 2.15-1.21 2.95-.61.61-1.44 1.03-2.43 1.16L4.33 22c-1.34.15-2.49-.99-2.33-2.35l.27-2.46c.24-2.19 2.07-3.59 4.01-3.63.2-.01.41 0 .6.01.85.11 1.68.5 2.36 1.19.67.67 1.05 1.45 1.16 2.29.01.19.03.38.03.57zM14.24 14.47c0-2.61-2.12-4.73-4.73-4.73\"></path><path stroke=\"#FFD23F\" stroke-linecap=\"round\" stroke-width=\"1.5\" d=\"M20.12 12.73l.74.73c1.49 1.49 1.49 2.96 0 4.45l-2.96 2.96c-1.47 1.47-2.96 1.47-4.43 0M3.11 10.51c-1.47-1.49-1.47-2.96 0-4.45L6.07 3.1c1.47-1.47 2.96-1.47 4.43 0l.74.74M11.25 3.85l-3.7 3.7M20.12 12.73l-2.96 2.95\"></path></svg>",
         "description": "This API provides a mechanism to easily create animated transitions between different DOM states, even across page loads in single-page apps.",
-        "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API",
+        "resources": [
+            {
+                "title": "MDN Documentation",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API"
+            },
+            {
+                "title": "Chrome Developers Guide",
+                "url": "https://developer.chrome.com/docs/web-platform/view-transitions"
+            }
+        ],
         "projects": [
             {
                 "id": "morphing-gallery",
                 "title": "Seamless Photo Gallery",
-                "description": "A photo gallery where clicking a thumbnail smoothly 'morphs' it into the full-screen version.",
-                "launchpad": {
-                    "search_terms": [
-                        "view transitions api tutorial",
-                        "css view transition name example",
-                        "morph animation javascript"
-                    ]
-                }
+                "description": "A photo gallery where clicking a thumbnail smoothly 'morphs' it into the full-screen version."
             }
         ]
     }
