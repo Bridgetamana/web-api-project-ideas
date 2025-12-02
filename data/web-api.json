@@ -177,8 +177,8 @@
                 "url": "https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API"
             },
             {
-                "title": "web.dev Guide",
-                "url": "https://web.dev/articles/file-system-access"
+                "title": "CSS-Tricks Guide",
+                "url": "https://css-tricks.com/getting-started-with-the-file-system-access-api/"
             },
             {
                 "title": "Chrome Developers",
@@ -189,7 +189,12 @@
             {
                 "id": "text-editor",
                 "title": "Browser-Based Code Editor",
-                "description": "Open a file from your desktop, edit it in the browser, and save it back to disk."
+                "description": "Open a file (html, css, js) from your desktop, edit it with syntax highlighting in the browser, and save changes directly to the disk."
+            },
+            {
+                "id": "local-markdown-wiki",
+                "title": "Local Markdown Wiki",
+                "description": "Select a local folder containing multiple .md files. The app lists them in a sidebar and allows you to edit and auto-save notes (like Obsidian)."
             }
         ]
     },
@@ -204,15 +209,24 @@
                 "url": "https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API"
             },
             {
-                "title": "MDN Using Guide",
-                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API"
+                "title": "Geolocation API Demo",
+                "url": "https://browserleaks.com/geo"
+            },
+            {
+                "title": "freeCodeCamp Guide",
+                "url": "https://www.freecodecamp.org/news/how-to-use-the-javascript-geolocation-api/"
             }
         ],
         "projects": [
             {
-                "id": "pwa-fitness-tracker",
-                "title": "PWA Fitness Run Tracker",
-                "description": "Track your running route, calculate distance, and speed without native apps."
+                "id": "local-weather-dashboard",
+                "title": "Hyper-Local Weather",
+                "description": "Detect the user's exact latitude and longitude on load to fetch and display the current weather forecast for their specific coordinates."
+            },
+            {
+                "id": "gps-scavenger-hunt",
+                "title": "GPS Scavenger Hunt",
+                "description": "A game where users must physically walk to specific real-world coordinates to 'unlock' the next clue or level."
             }
         ]
     },
@@ -224,18 +238,28 @@
         "resources": [
             {
                 "title": "MDN Documentation",
-                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Media_Capture_and_Streams_API"
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaStream"
             },
             {
-                "title": "web.dev Media Capture",
-                "url": "https://web.dev/articles/getusermedia-intro"
+                "title": "GetStream.io MediaStream Guide",
+                "url": "https://getstream.io/resources/projects/webrtc/basics/mediastream/"
             }
         ],
         "projects": [
             {
-                "id": "card-scanner",
-                "title": "Business Card Scanner",
-                "description": "Take a photo of a business card and extract text/save it."
+                "id": "web-photo-booth",
+                "title": "Browser Photo Booth",
+                "description": "Access the user's webcam, apply real-time CSS filters (sepia, grayscale) to the video feed, and capture high-quality snapshots."
+            },
+            {
+                "id": "qr-code-scanner",
+                "title": "Real-Time QR Scanner",
+                "description": "Process video frames 60 times a second to detect and decode QR codes instantly without taking a picture."
+            },
+            {
+                "id": "screen-recorder",
+                "title": "No-Install Screen Recorder",
+                "description": "Use `getDisplayMedia` to record the user's entire screen or a specific window and save the footage as a .webm file."
             }
         ]
     },
@@ -250,15 +274,39 @@
                 "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API"
             },
             {
-                "title": "MDN SubtleCrypto",
-                "url": "https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto"
+                "title": "Cloudflare Workers Guide",
+                "url": "https://developers.cloudflare.com/workers/runtime-apis/web-crypto/"
+            },
+            {
+                "title": "Thales Group Article",
+                "url": "https://cds.thalesgroup.com/en/hot-topics/what-web-cryptography-api"
             }
         ],
         "projects": [
             {
-                "id": "password-manager",
-                "title": "Secure Password Manager Extension",
-                "description": "Generate and store passwords securely using native browser encryption."
+                "id": "secure-password-gen",
+                "title": "True Random Password Gen",
+                "description": "Use `crypto.getRandomValues()` (instead of `Math.random`) to generate cryptographically strong passwords that are impossible to predict."
+            },
+            {
+                "id": "file-integrity-checker",
+                "title": "File Checksum Calculator",
+                "description": "Calculate the SHA-256 hash of any uploaded file to verify its integrity and ensure it hasn't been tampered with."
+            },
+            {
+                "id": "secret-message-encoder",
+                "title": "AES Message Encryptor",
+                "description": "Create a tool that encrypts text using a password (AES-GCM). The result is gibberish that can only be read with the correct password."
+            },
+            {
+                "id": "digital-signature-tool",
+                "title": "Digital Signature Verifier",
+                "description": "Generate a public/private key pair. Sign a text document with the private key, and allow others to verify it using the public key."
+            },
+            {
+                "id": "local-encrypted-notes",
+                "title": "Zero-Knowledge Notes",
+                "description": "A notes app that encrypts data *before* saving it to LocalStorage, ensuring that even if the device is inspected, the notes remain unreadable."
             }
         ]
     },
@@ -273,15 +321,15 @@
                 "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_MIDI_API"
             },
             {
-                "title": "web.dev MIDI Guide",
-                "url": "https://web.dev/articles/midi"
+                "title": "Smashing Magazine Article",
+                "url": "https://www.smashingmagazine.com/2018/03/web-midi-api/"
             }
         ],
         "projects": [
             {
-                "id": "browser-synth",
-                "title": "Virtual Synthesizer",
-                "description": "Connect a physical MIDI keyboard to your computer and play sounds generated by the browser."
+                "id": "piano-learning-game",
+                "title": "Piano Learning Game",
+                "description": "An app like 'Guitar Hero' for piano. It displays falling notes, and you must press the correct key on your physical MIDI keyboard to score points."
             }
         ]
     },
@@ -296,7 +344,11 @@
                 "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API"
             },
             {
-                "title": "web.dev Share Guide",
+                "title": "Telerik Blog Guide",
+                "url": "https://www.telerik.com/blogs/definitive-guide-using-web-share-api"
+            },
+            {
+                "title": "web.dev Article",
                 "url": "https://web.dev/articles/web-share"
             }
         ],
@@ -304,7 +356,17 @@
             {
                 "id": "quote-generator",
                 "title": "Viral Quote Card Generator",
-                "description": "Create a beautiful image from text and share it directly to Instagram or Twitter apps."
+                "description": "Create a beautiful image from text on a canvas, convert it to a blob, and share it directly to Instagram or Twitter using the native share sheet."
+            },
+            {
+                "id": "deep-link-sharer",
+                "title": "Video Timestamp Sharer",
+                "description": "A custom video player where clicking 'Share' generates a URL with the specific current timestamp (e.g., ?t=1m20s) and opens the share menu."
+            },
+            {
+                "id": "pwa-article-saver",
+                "title": "Read Later Integration",
+                "description": "A news reader app that uses the Share API to send the current article URL to apps like Pocket, Notion, or Notes."
             }
         ]
     },
@@ -312,27 +374,37 @@
         "id": "web-speech-api",
         "name": "Web Speech API",
         "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M12 19c3.31 0 6-2.69 6-6V8c0-3.31-2.69-6-6-6S6 4.69 6 8v5c0 3.31 2.69 6 6 6Z\" stroke=\"#ffd23f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M3 11v2a9 9 0 0 0 18 0v-2M9.11 7.48a8 8 0 0 1 5.5 0M10.03 10.48c1.2-.33 2.47-.33 3.67 0\" stroke=\"#ffd23f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
-        "description": "The Web Speech API enables you to incorporate voice data into web apps. The Web Speech API has two parts: SpeechSynthesis, and SpeechRecognition.",
+        "description": "The Web Speech API enables you to incorporate voice data into web apps. It has two parts: SpeechSynthesis (Text-to-Speech) and SpeechRecognition (Speech-to-Text).",
         "resources": [
             {
                 "title": "MDN Documentation",
                 "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API"
             },
             {
-                "title": "MDN Using Guide",
-                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API"
+                "title": "Google Chrome Speech Demo",
+                "url": "https://www.google.com/intl/en/chrome/demos/speech.html"
             }
         ],
         "projects": [
             {
                 "id": "voice-task-manager",
                 "title": "Voice-Controlled Task Manager",
-                "description": "A to-do list where you can add and remove items just by speaking."
+                "description": "A to-do list where you can add items by saying 'Add buy milk' and remove them by saying 'Delete buy milk'."
             },
             {
                 "id": "pronunciation-helper",
-                "title": "Language Pronunciation Helper",
-                "description": "An app that speaks a word in a target language and listens to you repeat it to check accuracy."
+                "title": "Language Pronunciation Coach",
+                "description": "The app speaks a word in a foreign language (Synthesis), listens to you repeat it (Recognition), and grades your accuracy."
+            },
+            {
+                "id": "article-reader-accessibility",
+                "title": "Article Audiobook Mode",
+                "description": "Add a 'Listen' button to a blog post that reads the content aloud using a natural-sounding browser voice."
+            },
+            {
+                "id": "voice-command-navigation",
+                "title": "Hands-Free Website Navigator",
+                "description": "Navigate a website using only voice commands like 'Scroll Down', 'Go Home', or 'Open Menu' for accessibility."
             }
         ]
     },
@@ -340,22 +412,40 @@
         "id": "view-transitions-api",
         "name": "View Transitions API",
         "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path stroke=\"#FFD23F\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M21.81 3.94c-1.54 3.84-5.4 9.06-8.63 11.65l-1.97 1.58c-.25.18-.5.34-.78.45 0-.18-.01-.38-.04-.57-.11-.84-.49-1.62-1.16-2.29-.68-.68-1.51-1.08-2.36-1.19-.2-.01-.4-.03-.6-.01.11-.31.28-.6.49-.84l1.56-1.97c2.58-3.23 7.82-7.11 11.65-8.64.59-.22 1.16-.06 1.52.31.38.37.56.94.32 1.52z\"></path><path stroke=\"#FFD23F\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M10.43 17.62c0 1.1-.42 2.15-1.21 2.95-.61.61-1.44 1.03-2.43 1.16L4.33 22c-1.34.15-2.49-.99-2.33-2.35l.27-2.46c.24-2.19 2.07-3.59 4.01-3.63.2-.01.41 0 .6.01.85.11 1.68.5 2.36 1.19.67.67 1.05 1.45 1.16 2.29.01.19.03.38.03.57zM14.24 14.47c0-2.61-2.12-4.73-4.73-4.73\"></path><path stroke=\"#FFD23F\" stroke-linecap=\"round\" stroke-width=\"1.5\" d=\"M20.12 12.73l.74.73c1.49 1.49 1.49 2.96 0 4.45l-2.96 2.96c-1.47 1.47-2.96 1.47-4.43 0M3.11 10.51c-1.47-1.49-1.47-2.96 0-4.45L6.07 3.1c1.47-1.47 2.96-1.47 4.43 0l.74.74M11.25 3.85l-3.7 3.7M20.12 12.73l-2.96 2.95\"></path></svg>",
-        "description": "This API provides a mechanism to easily create animated transitions between different DOM states, even across page loads in single-page apps.",
+        "description": "This API provides a mechanism to easily create animated transitions between different DOM states, allowing simple websites to feel like native mobile apps.",
         "resources": [
             {
                 "title": "MDN Documentation",
                 "url": "https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API"
             },
             {
-                "title": "Chrome Developers Guide",
+                "title": "freeCodeCamp Guide",
+                "url": "https://www.freecodecamp.org/news/how-to-use-the-view-transition-api/"
+            },
+            {
+                "title": "Chrome Developers Docs",
                 "url": "https://developer.chrome.com/docs/web-platform/view-transitions"
+            },
+            {
+                "title": "CSS-Tricks Guide",
+                "url": "https://css-tricks.com/toe-dipping-into-view-transitions/"
             }
         ],
         "projects": [
             {
                 "id": "morphing-gallery",
                 "title": "Seamless Photo Gallery",
-                "description": "A photo gallery where clicking a thumbnail smoothly 'morphs' it into the full-screen version."
+                "description": "A photo gallery where clicking a thumbnail smoothly expands (morphs) it into the full-screen version without a hard page cut."
+            },
+            {
+                "id": "circular-dark-mode",
+                "title": "Circular Reveal Dark Mode",
+                "description": "Implement a dark mode toggle where the new theme expands from the button in a growing circle, covering the screen."
+            },
+            {
+                "id": "smooth-page-transitions",
+                "title": "Animated Page Transitions",
+                "description": "Create a multi-page site where navigating between pages uses smooth fade and slide animations instead of instant cuts."
             }
         ]
     }
