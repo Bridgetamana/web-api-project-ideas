@@ -50,7 +50,16 @@
             </div>
           </div>
         </form>
-        <div class="card-wrapper" id="card-wrapper">
+        <div class="card-wrapper" id="card-wrapper"></div>
+
+        <div class="loading-state" id="loading-state">
+          <div class="loader"></div>
+          <p>Loading APIs...</p>
+        </div>
+
+        <div class="empty-state" id="empty-state">
+          <p class="empty-title">No results found</p>
+          <p class="empty-description">Try a different search term</p>
         </div>
       </main>
       <footer>
@@ -72,11 +81,117 @@
             ></path>
           </svg>
           by
-          <a href="https://x.com/bridget_amana" target="_blank">@bridgetamana</a>
+          <a href="https://x.com/bridget_amana" target="_blank" rel="noopener"
+            >@bridgetamana</a
+          >
         </div>
-        <a href="https://github.com/Bridgetamana/web-api-project-ideas" target="_blank">Star the repo</a>
+        <a
+          href="https://github.com/Bridgetamana/web-api-project-ideas"
+          target="_blank"
+          rel="noopener"
+          >Star the repo</a
+        >
       </footer>
     </div>
   </body>
-  <script src="./script.js"></script>
+  <script>
+    const cardWrapper = document.getElementById("card-wrapper");
+    const searchEl = document.getElementById("search");
+    const loadingState = document.getElementById("loading-state");
+    const emptyState = document.getElementById("empty-state");
+    const url = "/data/web-api.json";
+
+    let allData = [];
+
+    function showLoading() {
+      loadingState.style.display = "flex";
+      cardWrapper.style.display = "none";
+      emptyState.style.display = "none";
+    }
+
+    function hideLoading() {
+      loadingState.style.display = "none";
+    }
+
+    function showEmpty() {
+      emptyState.style.display = "flex";
+      cardWrapper.style.display = "none";
+    }
+
+    function hideEmpty() {
+      emptyState.style.display = "none";
+      cardWrapper.style.display = "grid";
+    }
+
+    showLoading();
+
+    fetch(url)
+      .then((response) => {
+        if (!response.ok) {
+          console.log(`HTTPS error ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        allData = data;
+        hideLoading();
+        displayCards(data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        hideLoading();
+      });
+
+    function displayCards(data) {
+      cardWrapper.innerHTML = "";
+
+      if (data.length === 0) {
+        showEmpty();
+        return;
+      }
+
+      hideEmpty();
+      data.forEach((api) => {
+        const card = createCard(api);
+        cardWrapper.appendChild(card);
+      });
+    }
+
+    function createCard(api) {
+      const card = document.createElement("a");
+      card.className = "single-card";
+      card.href = `#${api.id || api.name.toLowerCase().replace(/\s+/g, "-")}`;
+
+      card.innerHTML = `
+        <div class="icon-wrapper">
+          ${api.icon}
+        </div>
+        <div class="card-details">
+          <h3>${api.name}</h3>
+          <p>${api.description}</p>
+        </div>
+        <div class="card-labels">
+          <span class="label">
+            ${api.projects.length} project idea(s)
+          </span>
+        </div>
+    `;
+
+      return card;
+    }
+
+    searchEl.addEventListener("input", () => {
+      searchApi(allData);
+    });
+
+    function searchApi(data) {
+      const result = data.filter((api) => {
+        const lowerCaseName = api.name.toLowerCase();
+        const lowerCaseQuery = searchEl.value.toLowerCase();
+        return lowerCaseName.includes(lowerCaseQuery);
+      });
+
+      displayCards(result);
+    }
+  </script>
 </html>
