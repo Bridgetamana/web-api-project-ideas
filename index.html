@@ -160,7 +160,7 @@
     function createCard(api) {
       const card = document.createElement("a");
       card.className = "single-card";
-      card.href = `#${api.id || api.name.toLowerCase().replace(/\s+/g, "-")}`;
+      card.href = `./pages/api-detail.html?id=${api.id}`;
 
       card.innerHTML = `
         <div class="icon-wrapper">
