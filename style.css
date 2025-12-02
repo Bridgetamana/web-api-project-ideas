@@ -228,20 +228,12 @@ footer a:hover {
 
 .project-list {
   margin-top: 1rem;
-}
-
-.project-list li {
-  padding: 1.5rem 0;
   list-style: none;
-  border-top: 1px solid var(--border-subtle);
-}
-
-.project-list li:last-child {
-  border-bottom: none;
 }
 
 .project-list h3 {
-  font-size: 1rem;
+  font-size: 1.125rem;
+  font-weight: 600;
   margin-bottom: 0.5rem;
   color: var(--text-main);
 }
@@ -249,6 +241,7 @@ footer a:hover {
 .project-list p {
   color: var(--text-muted);
   font-size: 0.9375rem;
+  line-height: 1.6;
 }
 
 .loading-state {
@@ -295,4 +288,47 @@ footer a:hover {
 .empty-description {
   color: var(--text-muted);
   font-size: 0.9375rem;
+}
+
+.resources-section {
+  margin-bottom: 2rem;
+}
+
+.resources-section h2,
+.projects-section h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.resources-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.resource-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+}
+
+.resource-link:hover {
+  border-color: var(--border-focus);
+  color: var(--text-main);
+}
+
+.projects-section {
+  margin-top: 2rem;
+}
+
+.project-list li {
+  padding-block: 1rem;
+  border-top: 1px solid var(--border-subtle);
+  margin-bottom: 0.5rem;
+}
+
+.project-list li:last-child {
+  margin-bottom: 0;
 }

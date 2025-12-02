@@ -33,10 +33,15 @@
       </header>
 
       <main>
-        <div>
+        <section class="resources-section">
+          <h2>Resources</h2>
+          <div class="resources-list" id="resources-list"></div>
+        </section>
+
+        <section class="projects-section">
           <h2>Project Ideas</h2>
           <ul class="project-list" id="project-list"></ul>
-        </div>
+        </section>
       </main>
     </div>
   </body>
@@ -46,8 +51,10 @@
     const params = new URLSearchParams(window.location.search);
     const apiId = params.get("id");
     const listContainer = document.getElementById("project-list");
+    const resourcesList = document.getElementById("resources-list");
     const pageTitle = document.getElementById("page-title");
     const pageDesc = document.getElementById("page-desc");
+    const apiIcon = document.getElementById("api-icon");
     const pageWrapper = document.querySelector(".wrapper");
 
     fetch(url)
@@ -62,19 +69,48 @@
         const foundItem = allData.find((item) => item.id === apiId);
 
         if (foundItem) {
+          document.title = `${foundItem.name} | Web API Project Ideas`;
           pageTitle.innerHTML = foundItem.name;
           pageDesc.innerHTML = foundItem.description;
+
+          resourcesList.innerHTML = "";
+          if (foundItem.resources && foundItem.resources.length > 0) {
+            foundItem.resources.forEach((resource) => {
+              const link = document.createElement("a");
+              link.href = resource.url;
+              link.target = "_blank";
+              link.rel = "noopener noreferrer";
+              link.className = "resource-link";
+              link.innerHTML = `
+                <span>${resource.title}</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              `;
+              resourcesList.appendChild(link);
+            });
+          }
+
           listContainer.innerHTML = "";
 
           foundItem.projects.forEach((project) => {
             const li = document.createElement("li");
             li.innerHTML = `
-            <h3>${project.title}</h3> <p>${project.description}</p>
+              <h3>${project.title}</h3>
+              <p>${project.description}</p>
             `;
             listContainer.appendChild(li);
           });
         } else {
-          pageWrapper.innerHTML = "No ID Found!";
+          pageWrapper.innerHTML = `
+            <div class="empty-state" style="display: flex;">
+              <p class="empty-title">API not found</p>
+              <p class="empty-description">The requested API could not be found.</p>
+              <a href="../index.html" class="go-back-btn" style="margin-top: 1rem;">← Back to all APIs</a>
+            </div>
+          `;
         }
       })
       .catch((error) => console.error("Error:", error));
