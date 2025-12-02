@@ -10,8 +10,8 @@
                 "url": "https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API"
             },
             {
-                "title": "web.dev Guide",
-                "url": "https://web.dev/articles/broadcast-channel"
+                "title": "Developer Chrome Blog",
+                "url": "https://developer.chrome.com/blog/broadcastchannel"
             }
         ],
         "projects": [
@@ -19,6 +19,16 @@
                 "id": "multi-window-controller",
                 "title": "Dual-Window Presentation Tool",
                 "description": "Open a 'Remote' in one window and the 'Presentation' in another. Clicking the remote updates the presentation instantly."
+            },
+            {
+                "id": "cross-tab-auth-sync",
+                "title": "Cross-Tab Session Manager",
+                "description": "Implement a system where logging out in one tab instantly logs the user out in all other open tabs to prevent security issues."
+            },
+            {
+                "id": "synchronized-media-player",
+                "title": "Global Media Controller",
+                "description": "Build a music player where pausing or skipping a track in one tab reflects the state change in all other open tabs."
             }
         ]
     },
@@ -26,31 +36,45 @@
         "id": "canvas-api",
         "name": "Canvas API",
         "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path stroke=\"#ffd23f\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M3.5 20.5c.83.83 2.17.83 3 0l13-13c.83-.83.83-2.17 0-3-.83-.83-2.17-.83-3 0l-13 13c-.83.83-.83 2.17 0 3zM18.01 8.99l-3-3\"></path><path stroke=\"#ffd23f\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M8.5 2.44L10 2l-.44 1.5L10 5l-1.5-.44L7 5l.44-1.5L7 2l1.5.44zM4.5 8.44L6 8l-.44 1.5L6 11l-1.5-.44L3 11l.44-1.5L3 8l1.5.44zM19.5 13.44L21 13l-.44 1.5L21 16l-1.5-.44L18 16l.44-1.5L18 13l1.5.44z\"></path></svg>",
-        "description": "The Canvas API provides a means for drawing graphics via JavaScript and the HTML &lt;canvas&gt; element. It can be used for animation, game graphics, data visualization, photo manipulation, and real-time video processing.",
+        "description": "The Canvas API provides a means for drawing graphics via JavaScript and the HTML &lt;canvas&gt; element. It is used for animation, game graphics, data visualization, photo manipulation, and real-time video processing.",
         "resources": [
             {
                 "title": "MDN Documentation",
                 "url": "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API"
             },
             {
-                "title": "MDN Canvas Tutorial",
-                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial"
+                "title": "W3Schools Canvas Reference",
+                "url": "https://www.w3schools.com/jsref/api_canvas.asp"
             },
             {
                 "title": "HTML5 Canvas Deep Dive",
                 "url": "https://joshondesign.com/p/books/canvasdeepdive/title.html"
+            },
+            {
+                "title": "The Valley of Code Canvas Guide",
+                "url": "https://thevalleyofcode.com/canvas/"
             }
         ],
         "projects": [
             {
-                "id": "image-compressor",
-                "title": "Browser-Based Image Compressor",
-                "description": "Upload a heavy image and compress it locally in the browser before downloading."
+                "id": "meme-generator",
+                "title": "Meme Generator",
+                "description": "A starter project. Upload an image, render it to canvas, overlay custom text, and export the result as a PNG file."
             },
             {
-                "id": "collaborative-drawing",
-                "title": "Real-time Drawing Board",
-                "description": "A whiteboard where you can draw and others can see it updating live."
+                "id": "particle-system",
+                "title": "Interactive Particle System",
+                "description": "Create a physics simulation where thousands of small particles react to the mouse cursor (repel/attract) using `requestAnimationFrame`."
+            },
+            {
+                "id": "collaborative-whiteboard",
+                "title": "Real-Time Whiteboard",
+                "description": "A shared drawing surface where multiple users can sketch simultaneously. Coordinates are synced via WebSockets or Broadcast Channel."
+            },
+            {
+                "id": "image-filter-editor",
+                "title": "Browser-Based Photo Editor",
+                "description": " manipulate image pixels directly (getImageData) to create filters like grayscale, sepia, or brightness adjustments without a server."
             }
         ]
     },
@@ -58,7 +82,7 @@
         "id": "document-pip-api",
         "name": "Document Picture-in-Picture API",
         "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M22 10v5c0 5-2 7-7 7H9c-5 0-7-2-7-7V9c0-5 2-7 7-7h5\" stroke=\"#FFD23F\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M22 10h-4c-3 0-4-1-4-4V2l8 8Z\" stroke=\"#FFD23F\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
-        "description": "Unlike the standard PiP which only works for video, the *Document* PiP API allows you to open any HTML content (timers, notes, custom players) in a floating window.",
+        "description": "Unlike the standard PiP which only works for video, the Document PiP API allows you to open any HTML content (timers, notes, custom players) in a floating, always-on-top window.",
         "resources": [
             {
                 "title": "MDN Documentation",
@@ -67,13 +91,37 @@
             {
                 "title": "Chrome Developers Guide",
                 "url": "https://developer.chrome.com/docs/web-platform/document-picture-in-picture"
+            },
+            {
+                "title": "Specification",
+                "url": "https://wicg.github.io/document-picture-in-picture/"
             }
         ],
         "projects": [
             {
                 "id": "floating-pomodoro",
                 "title": "Always-On-Top Focus Timer",
-                "description": "A Pomodoro timer that floats over your other windows so you never lose track of time."
+                "description": "A Pomodoro timer that floats over your other windows so you never lose track of time while working in other apps."
+            },
+            {
+                "id": "video-call-sidecar",
+                "title": "Video Call Control Center",
+                "description": "Create a 'sidecar' window for video calls that keeps mute, camera toggle, and 'raise hand' buttons visible while you present from another tab."
+            },
+            {
+                "id": "live-stock-ticker",
+                "title": "Mini Stock/Crypto Monitor",
+                "description": "A tiny floating dashboard that displays real-time price updates via WebSockets, allowing traders to watch charts while reading news."
+            },
+            {
+                "id": "floating-scratchpad",
+                "title": "Research Scratchpad",
+                "description": "A floating note-taking window that stays open as you browse different documentation pages, preserving your notes across navigation."
+            },
+            {
+                "id": "music-player-mini",
+                "title": "Mini Music Player",
+                "description": "A custom media player interface with lyrics and 'skip' controls that floats on top of your workflow."
             }
         ]
     },
@@ -88,15 +136,33 @@
                 "url": "https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API"
             },
             {
-                "title": "web.dev Article",
-                "url": "https://web.dev/articles/eyedropper"
+                "title": "Chrome Developers Guide",
+                "url": "https://developer.chrome.com/docs/capabilities/web-apis/eyedropper"
+            },
+            {
+                "title": "Progressier Guide",
+                "url": "https://progressier.com/pwa-capabilities/eye-dropper-desktop"
+            },
+            {
+                "title": "Article by Patrick Brosset",
+                "url": "https://patrickbrosset.com/articles/2021-11-24-how-i-built-an-eye-dropper-browser-extension/"
             }
         ],
         "projects": [
             {
                 "id": "global-color-picker",
                 "title": "Universal Design Palette",
-                "description": "A tool for designers to grab colors from any website or app and save them to a palette."
+                "description": "A tool for designers to grab colors from any website, desktop app, or system UI and save them to a local palette."
+            },
+            {
+                "id": "real-world-palette",
+                "title": "Desktop Palette Generator",
+                "description": "Open a reference image in your OS photo viewer, then use the browser to sample multiple points and generate a CSS color scheme."
+            },
+            {
+                "id": "contrast-analyzer",
+                "title": "Global Contrast Checker",
+                "description": "Pick a foreground color and a background color from anywhere on your screen to calculate their WCAG accessibility contrast ratio."
             }
         ]
     },
